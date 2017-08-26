@@ -5,7 +5,7 @@ def d(x):
 	i = 2
 	y = 1
 
-	while i < x:
+	while i < int(x/2) + 1:
 		if x%i == 0:
 			y += i
 		i += 1

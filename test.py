@@ -1,10 +1,12 @@
-def score(x,y):
-	i = 0
-	score = 0
+def isAbd(x):
+	n = int(x/2) + 1
+	i = 2
+	sum = 1
 
-	while i < len(x):
-		score += ord(x[i]) - 64
+	while i < n:
+		if x%i == 0:
+			sum += i
 		i += 1
-	return y*score 
+	return sum > x
 
-print score("COLIN",938)
+print isAbd(12)
